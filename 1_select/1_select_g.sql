@@ -1,3 +1,5 @@
+USE sql_store;
+
 SELECT 
     name, 
     unit_price,

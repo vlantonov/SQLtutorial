@@ -1,3 +1,5 @@
+USE sql_store;
+
 SELECT 
     last_name, 
     first_name, 
