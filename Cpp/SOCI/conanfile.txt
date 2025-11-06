@@ -1,0 +1,13 @@
+[requires]
+soci/4.1.2
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
+
+[options]
+soci/*:shared       = True
+soci/*:with_mysql = True
