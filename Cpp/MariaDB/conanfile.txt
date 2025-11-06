@@ -1,0 +1,10 @@
+[requires]
+mariadb-connector-c/3.4.3
+libcurl/8.12.1
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
