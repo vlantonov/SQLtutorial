@@ -1,0 +1,13 @@
+[requires]
+mysql-connector-cpp/9.2.0
+openssl/3.6.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
+
+[options]
+mysql-connector-cpp/*:shared = False
