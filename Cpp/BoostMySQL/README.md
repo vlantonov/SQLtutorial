@@ -118,6 +118,19 @@ Default connection parameters:
 - **Username**: test_user
 - **Password**: test_pass
 
+## Build the image
+docker build -t boost-mysql-demo .
+
+## Run with external MySQL/MariaDB
+docker run --rm \
+  -e DB_HOST=your_host \
+  -e DB_PORT=3306 \
+  -e DB_NAME=test_db \
+  -e DB_USER=test_user \
+  -e DB_PASS=test_pass \
+  --network=host \
+  boost-mysql-demo
+
 ## Troubleshooting
 
 ### Connection Errors
