@@ -6,14 +6,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS NO)
 
 find_package(Boost REQUIRED)
-find_package(Threads REQUIRED)
 find_package(OpenSSL REQUIRED)
 
 add_executable(mysql_demo main.cpp)
 
 target_link_libraries(mysql_demo
     PRIVATE
-        Threads::Threads
-        OpenSSL::Crypto
+        boost::boost
         OpenSSL::SSL
 )
